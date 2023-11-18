@@ -18,3 +18,9 @@ public class UserService {
     }
 
 }
+
+/*
+* 1. git push origin --delete newBranch: To delete branch remotely
+* 2. git branch -d newBranch: To delete branch locally
+* 3.
+* */
