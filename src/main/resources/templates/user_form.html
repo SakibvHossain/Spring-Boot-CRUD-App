@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
 </head>
 <body>
-$END$
+<div class="container-fluid text-center">
+    <div>
+        <h2>Add New User</h2>
+    </div>
+    <form th:action="@{/users/save}" method="post">
+        <div class="border">
+            <div class="form-group row">
+                <div class="col-sm-2">Player to Drop</div>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

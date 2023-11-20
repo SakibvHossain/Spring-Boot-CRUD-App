@@ -21,4 +21,10 @@ public class UserController {
         model.addAttribute("userlists",userList);
         return "users";
     }
+
+    @GetMapping("/users/new")
+    public String createNewUser(Model model){
+        model.addAttribute("user", new User());
+        return "user_form";
+    }
 }
